@@ -1,0 +1,38 @@
+/*
+ * This is a CSS Module. We define classes here.
+ * We can use Tailwind's @apply directive to build them.
+ */
+
+.loginPageContainer {
+  @apply flex justify-center items-center h-screen bg-gray-900;
+}
+
+.loginForm {
+  @apply bg-gray-800 p-8 rounded-lg shadow-xl w-full max-w-sm;
+}
+
+.title {
+  @apply text-3xl font-bold text-center text-white mb-6;
+}
+
+.inputField {
+  @apply w-full bg-gray-700 text-white p-3 rounded mb-4 
+         focus:outline-none focus:ring-2 focus:ring-cyan-500;
+}
+
+.submitButton {
+  @apply w-full bg-cyan-600 hover:bg-cyan-700 p-3 rounded text-white 
+         font-bold transition-colors;
+}
+
+.errorText {
+  @apply text-red-400 text-center mb-4;
+}
+
+.switchText {
+  @apply text-center text-gray-400 mt-4;
+}
+
+.switchLink {
+  @apply text-cyan-400 hover:underline;
+}

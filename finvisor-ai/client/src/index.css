@@ -1,0 +1,105 @@
+/*
+ * ===================================================================
+ * FinVisor AI - Global Stylesheet
+ * ===================================================================
+ * This single file contains all custom styles for the application.
+ * It uses Tailwind's @apply directive to create reusable component classes.
+ */
+
+
+/* 1. REQUIRED: Import Tailwind's core layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* 2. OPTIONAL: Define global base styles for the app */
+@layer base {
+  body {
+    @apply bg-gray-900 text-gray-200 font-sans antialiased;
+  }
+}
+
+
+/* 3. REQUIRED: Define all custom component classes */
+@layer components {
+
+  /* --- Buttons --- */
+  .btn-primary {
+    @apply bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded-lg shadow-md transition-all;
+  }
+  
+  .btn-secondary {
+    @apply bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg shadow-md transition-all;
+  }
+  
+  .btn-delete {
+    @apply text-gray-500 hover:text-red-400 transition-colors;
+  }
+
+  .btn-ai-refresh {
+    @apply mt-4 w-full bg-gray-600 hover:bg-gray-500 p-2 rounded flex justify-center items-center gap-2 text-white font-bold;
+  }
+
+  
+  /* --- Forms --- */
+  .input-field {
+    @apply w-full bg-gray-700 text-white p-3 rounded-md border border-gray-600 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500;
+  }
+
+  .select-field {
+    @apply w-full bg-gray-700 text-white p-3 rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-cyan-500;
+  }
+
+  
+  /* --- Layout & Cards --- */
+  .dashboard-header {
+    @apply flex justify-between items-center mb-8;
+  }
+
+  .summary-card {
+    @apply bg-gray-800 p-6 rounded-xl shadow-lg flex items-center space-x-4;
+  }
+  
+  .chart-card {
+    @apply bg-gray-800 p-6 rounded-xl shadow-lg h-96;
+  }
+
+  .ai-assistant-card {
+    @apply bg-gray-800 p-6 rounded-xl shadow-lg h-full flex flex-col;
+  }
+
+  
+  /* --- Transaction List --- */
+  .list-container {
+    @apply bg-gray-800 p-6 rounded-xl shadow-lg space-y-3;
+  }
+  
+  .list-title {
+    @apply text-xl font-bold mb-2 text-white;
+  }
+  
+  .transaction-item {
+    @apply flex justify-between items-center bg-gray-700 p-3 rounded-md;
+  }
+  
+  .transaction-category {
+    @apply font-semibold capitalize text-white;
+  }
+  
+  .transaction-date {
+    @apply text-sm text-gray-400;
+  }
+  
+  .transaction-amount {
+    @apply font-bold;
+  }
+  
+  .amount-income {
+    @apply text-green-400;
+  }
+  
+  .amount-expense {
+    @apply text-red-400;
+  }
+}
