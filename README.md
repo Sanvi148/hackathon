@@ -45,3 +45,4 @@ Impact: FinVisor AI has the potential to democratize financial advice, making it
 
 Secure & Scalable Backend: Built on a robust Node.js, Express, and MongoDB stack with secure JWT-based user authentication
 
+Team Members- Aaditi Malhotra,Sanvi Gupta,Lavanya Sharma, Riya Bhatnagar
